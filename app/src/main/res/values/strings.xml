@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GrandTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_description">Reddit the website logo</string>
+    <string name="topic_image_description">image of the topic </string>
+</resources>

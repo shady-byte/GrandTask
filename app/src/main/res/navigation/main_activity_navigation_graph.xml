@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fintold.grandtask.uI.SplashFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_topicsListFragment"
+            app:destination="@id/topicsListFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicsListFragment"
+        android:name="com.fintold.grandtask.uI.TopicsListFragment"
+        android:label="Kotlin News"
+        tools:layout="@layout/fragment_topics_list" >
+        <action
+            android:id="@+id/action_topicsListFragment_to_topicDetailsFragment"
+            app:destination="@id/topicDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicDetailsFragment"
+        android:name="com.fintold.grandtask.uI.TopicDetailsFragment"
+        android:label="Article details"
+        tools:layout="@layout/fragment_topic_details" />
+</navigation>
